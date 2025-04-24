@@ -1,0 +1,8 @@
+<h2>http-client works!</h2>
+@for (user of users$ | async; track user) {
+  <div>
+    <h3>Name: {{ user.name }}</h3>
+    <p>Email: {{ user.email }}</p>
+    <hr>
+  </div>
+}

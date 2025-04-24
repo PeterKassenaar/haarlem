@@ -1,0 +1,7 @@
+<h2>customer-list works!</h2>
+<p>Our customers:</p>
+@for(customer of customers; track customer.id){
+  <h3>{{customer.id}} - {{customer.name}}</h3>
+  <p>{{customer.email}}</p>
+  <hr>
+}
