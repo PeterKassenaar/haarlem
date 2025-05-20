@@ -44,37 +44,39 @@
              formControlName="description">
     </div>
   </div>
-
-  <!--  Dynamic fields in the form, in an array-->
-  <ng-container formArrayName="songs">
-    <ng-container *ngFor="let songForm of songs.controls; let i = index">
-      <div [formGroupName]="i">
-        <input type="text" formControlName="artist" placeholder="artist">
-        <input type="text" formControlName="title" placeholder="title">
-        <input type="text" formControlName="duration" placeholder="duration">
-        <button class="btn btn-warning"
-                title="Delete this song"
-                (click)="deleteSong(i)">
-          <i class="fa fa-trash"></i>
-        </button>
-      </div>
+  <div class="row">
+    <!--  Dynamic fields in the form, in an array-->
+    <ng-container formArrayName="songs">
+      <ng-container *ngFor="let songForm of songs.controls; let i = index">
+        <div [formGroupName]="i">
+          <input type="text" formControlName="artist" placeholder="artist">
+          <input type="text" formControlName="title" placeholder="title">
+          <input type="text" formControlName="duration" placeholder="duration">
+          <button class="btn btn-warning"
+                  title="Delete this song"
+                  (click)="deleteSong(i)">
+            <i class="fa fa-trash"></i>
+          </button>
+        </div>
+      </ng-container>
     </ng-container>
-  </ng-container>
+  </div>
 </form>
-<button class="btn btn-info" (click)="addSong()">
-  <i class="fa fa-add"></i>
-  Add Song
-</button>
-<p>
+<div>
+<!--  Buttons to add and save the playlist.-->
+  <button class="btn btn-info" (click)="addSong()">
+    <i class="fa fa-add"></i>
+    Add Song
+  </button>
   <button class="btn btn-success" (click)="save()">
     <i class="fa fa-floppy-disk"></i>
     Save Playlist
   </button>
-</p>
+</div>
 <hr>
 <div *ngIf="playlistRaw">
   <p>TODO: Post to database, playlist:</p>
   <pre>
-{{playlistRaw | json }}
+{{ playlistRaw | json }}
 </pre>
 </div>
