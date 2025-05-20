@@ -15,7 +15,8 @@ There are various sample projects in the folder:
 - `examples/200-i18n-example-app` - a simple internationalization example - you need a reload to change translation files.
 - `examples/210-ngx-translate` - a simple translation example with translation on the fly.
 - `examples/250-ngrx-simple-store` - an example of `@ngrx/store` usage. Please note: This uses and OLDER VERSION of Node.js and Angular.
-- 
+- `examples/260-ngrx-effects` - an example of `@ngrx/effects` usage to talk to a dummy API. Please note: This uses and OLDER VERSION of Node.js and Angular.
+- ... 
 
 Questions? Email me at info@kassenaar.com - thanks!
 Cheers, Peter.
