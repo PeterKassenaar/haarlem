@@ -41,6 +41,8 @@ export class PlaylistComponent {
     this.songs.removeAt(index);
   }
 
+  // 'Save' to database. We use .getRawValue() to retrieve the
+  // contents as json and show in UI. Otherwise it would just be [Object object].
   save() {
     this.playlistRaw = this.playlist.getRawValue() as Playlist;
     console.log('TODO: Post to database: ', this.playlist.getRawValue());
