@@ -1,4 +1,11 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
+
+// interface for our Customer type
+export interface Customer {
+  id: number;
+  name: string;
+  email: string;
+}
 
 @Injectable({
   providedIn: 'root'

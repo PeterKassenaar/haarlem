@@ -1,5 +1,5 @@
 import {Component, inject, OnDestroy, OnInit} from '@angular/core';
-import {CustomerService} from "../../shared/services/customer.service";
+import {Customer, CustomerService} from "../../shared/services/customer.service";
 
 @Component({
   selector: 'app-customer-list',
@@ -10,9 +10,12 @@ import {CustomerService} from "../../shared/services/customer.service";
 })
 export class CustomerListComponent implements OnInit, OnDestroy {
   //...
+  customerService = inject(CustomerService);
+  customers: Customer[] = [];
 
   ngOnInit(): void {
     //...
+    this.customers = this.customerService.getCustomers();
   }
 
   ngOnDestroy(): void {
