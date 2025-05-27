@@ -29,6 +29,7 @@ export const routes: Routes = [
     component: LoginComponent,
   },
   {
+    // In this path, also Child Routes are loaded. Question: can this be simplified?
     path: 'customers',
     loadComponent: () => import('./components/customers/customers.component')
       .then(m => m.CustomersComponent),
