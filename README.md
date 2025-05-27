@@ -4,6 +4,11 @@ Slides and example code on the the training Angular - Gemeente Haarlem, spring 2
 ## Slides
 - Please find the slides in the folder `/slides`.
 
+## Links
+- TypeScript Configuration options: https://www.typescriptlang.org/tsconfig/
+- Angular CLI: https://cli.angular.io/
+- Angular Router: https://angular.io/guide/router
+
 ## Sample code
 There are various sample projects in the folder:
 - `sample app` - a simple app with a single page.
