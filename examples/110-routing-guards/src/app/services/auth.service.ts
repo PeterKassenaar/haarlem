@@ -10,6 +10,6 @@ export class AuthService {
   isLoggedIn(): boolean {
     // Here: implement your authentication logic!
     // Currently, we are returning true, to demonstrate the authGuard that uses this function.
-    return true;
+    return true
   }
 }

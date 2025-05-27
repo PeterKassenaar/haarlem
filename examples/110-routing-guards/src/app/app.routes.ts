@@ -29,6 +29,13 @@ export const routes: Routes = [
     component: LoginComponent,
   },
   {
+    path: 'customers',
+    loadComponent: () => import('./components/customers/customers.component')
+      .then(m => m.CustomersComponent),
+    loadChildren: () => import('./components/customers/customers.routes')
+      .then(m => m.CUSTOMERS_ROUTES)
+  },
+  {
     // No match? Redirect to home page.
     // You can also create a FileNotFoundComponent with more information...
     path: '**',
