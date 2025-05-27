@@ -5,6 +5,10 @@ import {CityService} from './shared/services/city.service';
 import {select, Store} from '@ngrx/store';
 import {LoadCitiesViaEffect} from './store/cities.actions';
 
+interface AppState {
+  cities: City[];
+}
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html'
@@ -13,14 +17,14 @@ export class AppComponent implements OnInit {
   cities$: Observable<City[]>;
 
   constructor(
-    private store: Store<City[]>,
+    private store: Store<AppState>,
     private cityService: CityService) {
   }
 
   ngOnInit(): void {
     // Bind observable this.cities$ to  state from the store
     this.cities$ = this.store.pipe(
-      select('cities')
+      select((state: AppState) => state.cities)
     );
     // Load the cities by dispatching an action; the effect listens to it.
     this.store.dispatch(LoadCitiesViaEffect());
