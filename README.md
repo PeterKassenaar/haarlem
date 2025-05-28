@@ -8,6 +8,9 @@ Slides and example code on the the training Angular - Gemeente Haarlem, spring 2
 - TypeScript Configuration options: https://www.typescriptlang.org/tsconfig/
 - Angular CLI: https://cli.angular.io/
 - Angular Router: https://angular.io/guide/router
+- NVM (Node Version Manager) for windows: https://github.com/coreybutler/nvm-windows
+- Angular Architects, Manfred Steyer: https://www.angulararchitects.io/en/
+- Voorbeeldproject met verschillende RxJS Operators: https://github.com/PeterKassenaar/ngx-rxjs-operators
 
 ## Sample code
 There are various sample projects in the folder:
