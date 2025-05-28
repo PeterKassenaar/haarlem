@@ -10,7 +10,10 @@ Slides and example code on the the training Angular - Gemeente Haarlem, spring 2
 - Angular Router: https://angular.io/guide/router
 - NVM (Node Version Manager) for windows: https://github.com/coreybutler/nvm-windows
 - Angular Architects, Manfred Steyer: https://www.angulararchitects.io/en/
+
+## RxJS
 - Voorbeeldproject met verschillende RxJS Operators: https://github.com/PeterKassenaar/ngx-rxjs-operators
+- Documentatie over verschillende RxJS Operators: https://rxjs.dev/api, https://www.learnrxjs.io/
 
 ## Sample code
 There are various sample projects in the folder:
