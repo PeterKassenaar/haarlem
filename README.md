@@ -14,6 +14,7 @@ Slides and example code on the the training Angular - Gemeente Haarlem, spring 2
 ## RxJS
 - Voorbeeldproject met verschillende RxJS Operators: https://github.com/PeterKassenaar/ngx-rxjs-operators
 - Documentatie over verschillende RxJS Operators: https://rxjs.dev/api, https://www.learnrxjs.io/
+- RxMarbles, interactive diagrams for RxJS: https://rxmarbles.com/
 
 ## Sample code
 There are various sample projects in the folder:
