@@ -6,6 +6,8 @@ import {Store, select} from '@ngrx/store';
 // Import all possible actions
 import {increment, decrement, reset} from './store/counter.actions';
 
+
+const COUNT = 'count';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html'
@@ -21,9 +23,12 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     // Select the 'count' property from the store and
     // assign it to count$ variable.
-    this.count$ = this.store.pipe(
-      select('count')
-    );
+    // this.count$ = this.store.pipe(
+    //   select('count')
+    // );
+    //
+    // Newer syntax
+    this.count$ = this.store.select(state => state.count);
   }
 
   // dispatch actions for the store. They are imported above
