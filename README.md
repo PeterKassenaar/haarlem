@@ -1,7 +1,8 @@
 # haarlem
 
 Slides and example code on the the training Angular - Gemeente Haarlem, spring 2025.
-This repository will be deleted on 1 July 2025. Please update your code beforehande.
+
+This repository will be deleted on 1 July 2025. Please update your code beforehand.
 
 ## Slides
 
@@ -25,8 +26,9 @@ This repository will be deleted on 1 July 2025. Please update your code beforeha
 ## Forms
 
 - Formly - create your form, based on a (json) model:https://formly.dev/
-- A small sample project, using formly: https://github.com/PeterKassenaar/ngx-formly-demo. Old, but still working. Note
-  however, newer/additional options might be available.
+- A small sample project, using formly: https://github.com/PeterKassenaar/ngx-formly-demo. 
+  - Old, but still working. Note
+    however, newer/additional options might be available.
 
 ## Sample code
 
@@ -48,5 +50,8 @@ There are various sample projects in the folder:
   OLDER VERSION of Node.js and Angular.
     - During the training: added the loading effect to show/hide a spinner or loading message while busy loading.
 
-Questions? Email me at info@kassenaar.com - thanks!
+Questions, or in need of a second opinion? 
+
+Email me at info@kassenaar.com - thanks!
+
 Cheers, Peter.
